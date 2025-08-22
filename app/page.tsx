@@ -1,9 +1,21 @@
-import { Button } from "@/components/ui/button"
+import { Navigation } from "@/components/navigation"
+import { Hero } from "@/components/hero"
+import { About } from "@/components/about"
+import { Services } from "@/components/services"
+import { Gallery } from "@/components/gallery"
+import { Hobbies } from "@/components/hobbies"
+import { Contact } from "@/components/contact"
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen bg-indigo-700">
-      <Button>Click me</Button>
-    </div>
+    <main className="min-h-screen">
+      <Navigation />
+      <Hero />
+      <About />
+      <Services />
+      <Gallery />
+      <Hobbies />
+      <Contact />
+    </main>
   )
 }
