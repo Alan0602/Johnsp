@@ -158,3 +158,18 @@
     animation: float 3s ease-in-out infinite;
   }
 }
+
+/* Add to your globals.css if needed */
+.video-background-container {
+  position: relative;
+}
+
+/* Ensure video doesn't interfere with content */
+video {
+  pointer-events: none;
+}
+
+/* Smooth content transitions */
+.main-content {
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+}

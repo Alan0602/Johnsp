@@ -1,59 +1,207 @@
-import { Card } from "@/components/ui/card"
+// src/components/about.tsx
+"use client";
 
-const clients = [
-  { name: "Nike", logo: "/nike-swoosh.png" },
-  { name: "Apple", logo: "/apple-logo.png" },
-  { name: "Google", logo: "/google-logo.png" },
-  { name: "Microsoft", logo: "/microsoft-logo.png" },
-  { name: "Adobe", logo: "/adobe-logo.png" },
-  { name: "Spotify", logo: "/spotify-logo.png" },
-]
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+// Animation variants for framer-motion
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
+
+const visualVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
 
 export function About() {
-  return (
-    <section id="about" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="animate-slide-in">
-            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-primary">About Me</h2>
-            <p className="text-lg leading-relaxed mb-6 text-muted-foreground">
-              With over 8 years of experience in creative direction and visual design, I bring the same precision and
-              flow found in skateboarding to every project. My approach combines strategic thinking with bold creativity
-              to deliver impactful visual solutions.
-            </p>
-            <p className="text-lg leading-relaxed mb-8 text-muted-foreground">
-              I specialize in brand identity, digital experiences, and creative campaigns that push boundaries while
-              maintaining commercial viability. Every project is an opportunity to create something that moves people.
-            </p>
-          </div>
+  const [isInView, setIsInView] = useState(false);
+  const aboutSectionRef = useRef<HTMLDivElement>(null);
 
-          <div className="animate-slide-in">
-            <img
-              src="/art-director-headshot.png"
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (aboutSectionRef.current) {
+      observer.observe(aboutSectionRef.current);
+    }
+
+    return () => {
+      if (aboutSectionRef.current) {
+        observer.unobserve(aboutSectionRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <section id="about" ref={aboutSectionRef} className="bg-white text-gray-800 py-16 sm:py-20 lg:py-24">
+      <h2 className="  font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-4xl md:text-5xl text-center mb-8 mt-2">About Me</h2>
+      <motion.div 
+        className="container mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12"
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
+        {/* Left Panel: Text Content */}
+        <div className="flex flex-col justify-center space-y-6">
+          <motion.div className="flex items-center gap-4" variants={itemVariants}>
+            <Image
+              src="/Johns.png"
               alt="Johnson Varghese"
-              className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+              width={80}
+              height={80}
+              className="rounded-full shadow-lg"
+            />
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+                Johnson Varghese
+              </h2>
+              <p className="text-base text-gray-600 sm:text-lg">Senior Art Director</p>
+            </div>
+          </motion.div>
+<div className="h-8"></div>
+          <motion.h3 
+            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent sm:text-3xl lg:text-4xl" 
+            variants={itemVariants}
+          >
+            Skate the Edge, Create the Impact.
+          </motion.h3>
+
+          <motion.p 
+            className="text-sm leading-relaxed text-gray-700 sm:text-base lg:text-lg" 
+            variants={itemVariants}
+          >
+            Born in Kochi and now riding the creative streets of Bangalore, I treat every project like a fresh run—full of momentum, precision, and a willingness to take risks. My work blends bold storytelling with design impact to elevate brands and leave a lasting impression.
+          </motion.p>
+
+          {/* <motion.div variants={itemVariants}>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500 sm:text-sm">
+              Trusted by leading brands
+            </h4>
+            <div className="mt-3 flex flex-wrap items-center gap-4 sm:gap-6">
+              {["intel.svg", "wipro.svg", "acer.svg", "jabra.svg", "aws.svg"].map((logo) => (
+                <Image
+                  key={logo}
+                  src={`/logos/${logo}`}
+                  alt={logo.split('.')[0]}
+                  width={80}
+                  height={40}
+                  className="h-6 w-auto object-contain transition-transform duration-300 hover:scale-110 sm:h-8"
+                />
+              ))}
+            </div>
+          </motion.div> */}
+        </div>
+
+        {/* Right Panel: Video Display */}
+        <motion.div 
+          className="flex items-center justify-center" 
+          variants={visualVariants}
+        >
+          <div className="relative h-auto w-full max-w-sm sm:max-w-md lg:max-w-lg">
+            <Image
+              src="/about-tab-display.png"
+              alt="Display Frame"
+              width={1000}
+              height={800}
+              className="h-full w-full"
+            />
+            <video
+              src="/trail.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute left-1/2 top-1/2 h-[82%] w-[90%] -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover sm:h-[84%] sm:w-[92%] lg:h-[86%] lg:w-[94%]"
             />
           </div>
+        </motion.div>
+      </motion.div>
+      <div className="relative h-20 overflow-hidden">
+        <div className="marquee absolute top-0 left-0 h-full w-full flex items-center justify-around">
+          {[
+        "file.svg",
+        "globe.svg",
+        "next.svg",
+        "window.svg",
+        "file.svg",
+        "globe.svg",
+        "next.svg",
+        "window.svg",
+        "file.svg",
+        "globe.svg",
+        "next.svg",
+        "window.svg",
+          ].map((logo, index) => (
+        <motion.div
+          key={index}
+          className="mx-4 flex-shrink-0"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: index * 0.1,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        >
+          <Image
+            src={`/${logo}`}
+            alt={logo.split(".")[0]}
+            width={60}
+            height={30}
+            className="h-6 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+          />
+        </motion.div>
+          ))}
         </div>
+        <style jsx>{`
+          .marquee {
+        animation: slide 20s linear infinite;
+          }
 
-        {/* Client Logos */}
-        <div className="mt-16">
-          <h3 className="font-heading font-semibold text-2xl text-center mb-8 text-foreground">
-            Trusted by Industry Leaders
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center">
-            {clients.map((client) => (
-              <Card key={client.name} className="p-4 hover:shadow-md transition-shadow duration-200">
-                <img
-                  src={client.logo || "/placeholder.svg"}
-                  alt={client.name}
-                  className="w-full h-12 object-contain grayscale hover:grayscale-0 transition-all duration-200"
-                />
-              </Card>
-            ))}
-          </div>
-        </div>
+          @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+          }
+        `}</style>
       </div>
     </section>
-  )
+  );
 }
