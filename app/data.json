@@ -1,0 +1,194 @@
+{
+  "personalInfo": {
+    "name": "Johnson Varghese",
+    "title": "Senior Art Director",
+    "email": "johnspulimoottil@gmail.com",
+    "phone": "+91 98478 12750",
+    "location": "Bangalore, India"
+  },
+  "hero": {
+    "title": "Skate the Edge, Create the Impact.",
+    "cta": "Drop In"
+  },
+  "about": {
+    "introduction": "Born in Kochi and now riding the creative streets of Bangalore, I treat every project like a fresh run full of momentum, precision, and a willingness to take risks.",
+    "experienceHighlights": [
+      "I've ollied over tight deadlines, slid through complex brand challenges, and landed creative tricks for brands like Intel, Wipro, Infosys, AWS, Jabra, and Acer - and plenty more on my ride map."
+    ],
+    "creativePhilosophy": "My work blends bold storytelling with design impact, whether it's a high-voltage campaign, a brand identity with bite, or a layout built to turn heads. Every brief is a new drop-in, and I'm always ready to ride it to the perfect landing.",
+    "hobbies": [
+      {
+        "name": "Painting",
+        "description": "Landing colors like perfect tricks on canvas."
+      },
+      {
+        "name": "Violin",
+        "description": "Hitting every note with balance and rhythm."
+      },
+      {
+        "name": "Theatre",
+        "description": "Owning the stage like a skatepark spotlight."
+      },
+      {
+        "name": "Cycling",
+        "description": "Pedaling into new lines and fresh views."
+      },
+      {
+        "name": "Skating",
+        "description": "Always ready for the next drop-in."
+      }
+    ]
+  },
+  "legal": {
+    "confidentialityNotice": "Before You Dive In: Some client projects, including work for brands mentioned in this portfolio, are not displayed due to confidentiality and legal agreements."
+  },
+  "projects": [
+    {
+      "id": "cs-zapplay",
+      "title": "ZAPPLAY Corporate Gaming Platform",
+      "category": "Case Study",
+      "tagline": "Game Never Pauses",
+      "imageUrl": "/images/WhatsApp Image 2025-09-15 at 20.56.12 (3).jpeg",
+      "details": {
+        "overview": "A corporate gaming platform was developed to reduce employee stress, enhance productivity, and foster stronger team bonding through fun, interactive gameplay tailored for in-house use.",
+        "myRole": [
+          "Brand identity design (logo)",
+          "Visual communication (posters, campaign creatives)",
+          "Web design",
+          "Promotional video direction and editing"
+        ],
+        "designThinking": "We chose a vibrant and energetic visual language to reflect the playful spirit of the platform, using bold colors and dynamic forms to spark excitement and collaboration. The branding and posters were crafted to be both fun and professional-resonating with corporate audiences.",
+        "execution": [
+          "Logo: Bold, dynamic typography with flames/icons",
+          "Posters: Teaser & engagement posters for office display",
+          "Website: Clean, responsive web experience with game previews",
+          "Video: High-energy promo video for onboarding & awareness"
+        ],
+        "lookingAhead": "Fostering team spirit and reducing workplace stress, this project can be introduced to more corporate offices and adapted for hybrid teams. Play is a powerful way to strengthen connections, inspire collaboration, and transform workplace culture.",
+        "videoUrl": "https://www.youtube.com/watch?v=N5_6vSVUgfk"
+      }
+    },
+    {
+      "id": "cs-bitewise",
+      "title": "BiteWise AI Nutrition App",
+      "category": "Case Study",
+      "tagline": "Eat Smart, Live Better.",
+      "imageUrl": "/images/WhatsApp Image 2025-09-15 at 20.56.12 (1).jpeg",
+      "details": {
+        "overview": "A cross-platform app (mobile, tablet, laptop) that uses smartwatch health data to suggest meals tailored to real-time body needs, with healthy drink pairings and lifestyle tips.",
+        "myRole": ["Concept Development", "Branding", "Website", "Promo video"],
+        "challenge": "People often eat based on habit, convenience, or social influence rather than actual body needs. There is a lack of real-time, personalized nutrition guidance.",
+        "solution": "An AI-powered app that connects with wearables to analyze body condition and suggest personalized meals and healthy drink pairings instantly.",
+        "keyFeatures": [
+          "Real-Time Body Data Analysis",
+          "Smart Food Recommendations",
+          "Healthy Drink Pairings",
+          "Multi-Device Compatibility"
+        ],
+        "impact": "Encourages healthier eating habits, reduces overconsumption, and bridges the gap between health tracking and actionable nutrition.",
+        "videoUrl": "https://www.youtube.com/watch?v=6CQfj4VI9JA"
+      }
+    },
+    {
+      "id": "campaign-german-bond",
+      "title": "GERMAN BOND Ad Campaign",
+      "category": "Campaigns",
+      "tagline": "The Bond You Can Rely Upon",
+      "imageUrl": "/images/JB_00020_Jabra_ValentinesDay_Creative_a.jpg",
+      "details": {
+        "overview": "A comprehensive advertising campaign for German Bond adhesive products, focusing on reliability, strength, and trust in industrial applications.",
+        "myRole": ["Creative Direction", "Visual Design", "Campaign Strategy"],
+        "challenge": "Position German Bond as the most reliable adhesive solution in a competitive market.",
+        "solution": "Created a campaign emphasizing trust and reliability through strong visual metaphors and compelling messaging.",
+        "galleryImages": ["/images/JB_00020_Jabra_ValentinesDay_Creative_a.jpg", "/images/JB_00027Jabra_BlueParrott_Japanese_02.jpg"]
+      }
+    },
+    {
+      "id": "campaign-mehyog",
+      "title": "Mehyog Healthcare Ads",
+      "category": "Campaigns",
+      "tagline": "Wellness Redefined",
+      "imageUrl": "/images/mehyog-new-Eng-2.jpg",
+      "details": {
+        "overview": "Healthcare advertising campaign focusing on holistic wellness and modern medical solutions.",
+        "myRole": ["Art Direction", "Visual Communication", "Brand Messaging"],
+        "challenge": "Communicate complex healthcare benefits in an accessible and trustworthy manner.",
+        "solution": "Developed clean, professional visuals with clear messaging that builds confidence in healthcare services.",
+        "galleryImages": ["/images/mehyog-new-Eng-2.jpg", "/images/Super-hero-Health-140720.jpg"]
+      }
+    },
+    {
+      "id": "branding-ticks",
+      "title": "TICKS Smartwatch Branding",
+      "category": "Branding",
+      "tagline": "Connected at Any Depth",
+      "imageUrl": "/images/T-Hub-Blues-270420.png",
+      "details": {
+        "overview": "The TICKS logo combines precision and trust in a sleek, modern form. The brandmark evolution uses a checkmark for accuracy, a minimal typeface for a futuristic aesthetic, and a blue & green palette to evoke trust and vitality.",
+        "myRole": ["Brand Identity", "Logo Design", "Visual System"],
+        "designThinking": "Created a brand identity that reflects precision timing and modern technology through clean typography and symbolic elements.",
+        "galleryImages": ["/images/T-Hub-Blues-270420.png", "/images/T-Hub-Blues090320.png", "/images/T-Hub-Blues170220.png"]
+      }
+    },
+    {
+      "id": "illustrations-intel",
+      "title": "Intel Superheroes Illustration",
+      "category": "Illustrations",
+      "tagline": "Calling all deep learning superheroes to solve real-world challenges.",
+      "imageUrl": "/images/Super-hero-140720A.jpg",
+      "details": {
+        "overview": "Creative illustration series for Intel's deep learning initiatives, featuring superhero-themed visuals to make complex technology accessible and engaging.",
+        "myRole": ["Illustration", "Concept Development", "Visual Storytelling"],
+        "challenge": "Make deep learning technology approachable and exciting for diverse audiences.",
+        "solution": "Developed superhero-themed illustrations that transform complex AI concepts into relatable, heroic narratives.",
+        "galleryImages": ["/images/Super-hero-140720A.jpg", "/images/Super-hero-Environmental-150720.jpg", "/images/Super-hero-Health-140720.jpg"]
+      }
+    },
+    {
+      "id": "calligraphy-collection",
+      "title": "Calligraphy & Lettering",
+      "category": "Calligraphy",
+      "tagline": "Art of Beautiful Writing",
+      "imageUrl": "/images/buoucher  CSS.jpg",
+      "details": {
+        "overview": "A collection of custom calligraphy and lettering work showcasing traditional and modern typography techniques.",
+        "myRole": ["Calligraphy", "Typography", "Custom Lettering"],
+        "approach": "Blending traditional calligraphy techniques with contemporary design sensibilities to create unique typographic solutions.",
+        "galleryImages": ["/images/buoucher  CSS.jpg", "/images/buoucher 01.jpg", "/images/cake label -01.jpg"]
+      }
+    },
+    {
+      "id": "campaign-nike-infosys",
+      "title": "Nike Stores Acceleration",
+      "client": "Nike-Infosys Discovery Engagement",
+      "category": "Campaigns",
+      "tagline": "Accelerating Retail Innovation",
+      "imageUrl": "/images/LinkedIn-Ads_150317_a.jpg",
+      "details": {
+        "overview": "Strategic campaign for Nike's retail acceleration program in partnership with Infosys, focusing on digital transformation and customer experience enhancement.",
+        "myRole": ["Campaign Strategy", "Visual Design", "Digital Experience"],
+        "challenge": "Communicate the benefits of digital transformation in retail environments.",
+        "solution": "Created dynamic visuals that showcase the intersection of sports performance and cutting-edge technology.",
+        "galleryImages": ["/images/LinkedIn-Ads_150317_a.jpg", "/images/LinkedIn-Ads_b.jpg"]
+      }
+    },
+    {
+      "id": "campaign-acer",
+      "title": "Acer Gaming Laptops",
+      "category": "Campaigns",
+      "tagline": "Ripping Performance",
+      "imageUrl": "/images/Aspire-Lite--AL15-41-.jpg",
+      "details": {
+        "overview": "High-energy campaign for Acer's gaming laptop series, emphasizing raw performance and cutting-edge technology for serious gamers.",
+        "myRole": ["Creative Direction", "Visual Design", "Campaign Development"],
+        "challenge": "Stand out in the competitive gaming laptop market with compelling visuals.",
+        "solution": "Developed aggressive, performance-focused visuals that speak directly to the gaming community's passion for power and speed.",
+        "galleryImages": ["/images/Aspire-Lite--AL15-41-.jpg", "/images/Gemini_Generated_Image_68r2nr68r2nr68r2.jpg"]
+      }
+    }
+  ],
+  "footer": {
+    "closingStatement": "Thanks for flipping through my work. Like a perfect landing, I believe great collaborations come from balance, flow, and the courage to take a leap.",
+    "cta": "Let's roll into the next big idea together."
+  }
+}

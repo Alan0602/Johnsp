@@ -1,0 +1,218 @@
+{
+  "gallery": {
+    "title": "Visual Gallery",
+    "description": "A curated collection of creative works and design explorations",
+    "rows": [
+      {
+        "id": "row-1",
+        "direction": "left",
+        "images": [
+          {
+            "id": "img-1",
+            "src": "/images/JB_00020_Jabra_ValentinesDay_Creative_a.jpg",
+            "alt": "Jabra Valentine's Day Creative",
+            "category": "Campaign"
+          },
+          {
+            "id": "img-2",
+            "src": "/images/Screenshot 2025-08-16 at 3.15.16 PM.png",
+            "alt": "ZapPlay Gaming Platform",
+            "category": "UI/UX"
+          },
+          {
+            "id": "img-3",
+            "src": "/images/Super-hero-140720A.jpg",
+            "alt": "Intel Superhero Illustration",
+            "category": "Illustration"
+          },
+          {
+            "id": "img-4",
+            "src": "/images/T-Hub-Blues-270420.png",
+            "alt": "TICKS Smartwatch Branding",
+            "category": "Branding"
+          },
+          {
+            "id": "img-5",
+            "src": "/images/LinkedIn-Ads_150317_a.jpg",
+            "alt": "Nike LinkedIn Campaign",
+            "category": "Campaign"
+          },
+          {
+            "id": "img-6",
+            "src": "/images/mehyog-new-Eng-2.jpg",
+            "alt": "Mehyog Healthcare",
+            "category": "Healthcare"
+          }
+        ]
+      },
+      {
+        "id": "row-2",
+        "direction": "right",
+        "images": [
+          {
+            "id": "img-7",
+            "src": "/images/Aspire-Lite--AL15-41-.jpg",
+            "alt": "Acer Gaming Laptop",
+            "category": "Product"
+          },
+          {
+            "id": "img-8",
+            "src": "/images/JB_00027Jabra_BlueParrott_Japanese_02.jpg",
+            "alt": "Jabra BlueParrott Japanese",
+            "category": "Campaign"
+          },
+          {
+            "id": "img-9",
+            "src": "/images/Screenshot 2025-08-16 at 7.40.12 AM.png",
+            "alt": "BiteWise AI Nutrition",
+            "category": "Mobile App"
+          },
+          {
+            "id": "img-10",
+            "src": "/images/buoucher  CSS.jpg",
+            "alt": "Calligraphy Design",
+            "category": "Typography"
+          },
+          {
+            "id": "img-11",
+            "src": "/images/JB_00115_Enterprise-JabraZone-Visuals.jpg",
+            "alt": "Jabra Enterprise Visuals",
+            "category": "Corporate"
+          },
+          {
+            "id": "img-12",
+            "src": "/images/WhatsApp Image 2025-09-15 at 20.56.12 (3).jpeg",
+            "alt": "Creative Design Work",
+            "category": "Design"
+          }
+        ]
+      },
+      {
+        "id": "row-3",
+        "direction": "left",
+        "images": [
+          {
+            "id": "img-13",
+            "src": "/images/Jabra-Christmas-Creative_a.jpg",
+            "alt": "Jabra Christmas Creative",
+            "category": "Seasonal"
+          },
+          {
+            "id": "img-14",
+            "src": "/images/Super-hero-Environmental-150720.jpg",
+            "alt": "Environmental Superhero",
+            "category": "Illustration"
+          },
+          {
+            "id": "img-15",
+            "src": "/images/Screenshot 2025-08-11 at 2.39.21 PM.png",
+            "alt": "UI Design Screenshot",
+            "category": "UI/UX"
+          },
+          {
+            "id": "img-16",
+            "src": "/images/cake label -01.jpg",
+            "alt": "Cake Label Design",
+            "category": "Packaging"
+          },
+          {
+            "id": "img-17",
+            "src": "/images/T-Hub-Blues090320.png",
+            "alt": "T-Hub Blues Design",
+            "category": "Branding"
+          },
+          {
+            "id": "img-18",
+            "src": "/images/WhatsApp Image 2025-09-15 at 20.56.12 (1).jpeg",
+            "alt": "Creative Portfolio Work",
+            "category": "Design"
+          }
+        ]
+      },
+      {
+        "id": "row-4",
+        "direction": "right",
+        "images": [
+          {
+            "id": "img-19",
+            "src": "/images/Poster-op-02.jpg",
+            "alt": "Operation Poster Design",
+            "category": "Poster"
+          },
+          {
+            "id": "img-20",
+            "src": "/images/JB_00027Jabra_BlueParrott_Japanese_04.jpg",
+            "alt": "Jabra BlueParrott Japanese 04",
+            "category": "Campaign"
+          },
+          {
+            "id": "img-21",
+            "src": "/images/Screenshot 2025-08-16 at 9.12.37 AM.png",
+            "alt": "App Interface Design",
+            "category": "Mobile"
+          },
+          {
+            "id": "img-22",
+            "src": "/images/powerect bro.jpg",
+            "alt": "Powerect Brochure",
+            "category": "Print"
+          },
+          {
+            "id": "img-23",
+            "src": "/images/Weekly-eDM-_a.jpg",
+            "alt": "Weekly eDM Design",
+            "category": "Email"
+          },
+          {
+            "id": "img-24",
+            "src": "/images/WhatsApp Image 2025-09-15 at 20.56.12 (2).jpeg",
+            "alt": "Design Portfolio Piece",
+            "category": "Design"
+          }
+        ]
+      },
+      {
+        "id": "row-5",
+        "direction": "left",
+        "images": [
+          {
+            "id": "img-25",
+            "src": "/images/Poster_Tobacco-free.jpg",
+            "alt": "Tobacco Free Poster",
+            "category": "Social"
+          },
+          {
+            "id": "img-26",
+            "src": "/images/Super-hero-Health-140720.jpg",
+            "alt": "Health Superhero",
+            "category": "Illustration"
+          },
+          {
+            "id": "img-27",
+            "src": "/images/Screenshot 2025-08-15 at 8.11.38 AM.png",
+            "alt": "Interface Design",
+            "category": "UI/UX"
+          },
+          {
+            "id": "img-28",
+            "src": "/images/theame-01.jpg",
+            "alt": "Theme Design",
+            "category": "Branding"
+          },
+          {
+            "id": "img-29",
+            "src": "/images/SUMNGLI  pack.jpg",
+            "alt": "SUMNGLI Package Design",
+            "category": "Packaging"
+          },
+          {
+            "id": "img-30",
+            "src": "/images/WhatsApp Image 2025-09-15 at 20.56.12 (4).jpeg",
+            "alt": "Creative Work Sample",
+            "category": "Design"
+          }
+        ]
+      }
+    ]
+  }
+}

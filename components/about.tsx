@@ -4,6 +4,20 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { 
+  FaCamera, 
+  FaPaintBrush, 
+  FaLaptopCode, 
+  FaSkating,
+  FaPalette,
+  FaDesktop,
+  FaPhotoVideo,
+  FaBrush,
+  FaCode,
+  FaTabletAlt,
+  FaMobile,
+  FaVectorSquare
+} from "react-icons/fa";
 
 // Animation variants for framer-motion
 const containerVariants = {
@@ -143,49 +157,59 @@ export function About() {
               loop
               muted
               playsInline
+              preload="metadata"
+              onError={(e) => {
+                console.log('Video failed to load:', e);
+                // Fallback to skate1.mp4 if trail.mp4 fails
+                e.currentTarget.src = '/skate1.mp4';
+              }}
               className="absolute left-1/2 top-1/2 h-[82%] w-[90%] -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover sm:h-[84%] sm:w-[92%] lg:h-[86%] lg:w-[94%]"
-            />
+            >
+              <source src="/trail.mp4" type="video/mp4" />
+              <source src="/skate1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </motion.div>
       </motion.div>
       <div className="relative h-20 overflow-hidden">
         <div className="marquee absolute top-0 left-0 h-full w-full flex items-center justify-around">
           {[
-        "file.svg",
-        "globe.svg",
-        "next.svg",
-        "window.svg",
-        "file.svg",
-        "globe.svg",
-        "next.svg",
-        "window.svg",
-        "file.svg",
-        "globe.svg",
-        "next.svg",
-        "window.svg",
-          ].map((logo, index) => (
-        <motion.div
-          key={index}
-          className="mx-4 flex-shrink-0"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.5,
-            delay: index * 0.1,
-            ease: "easeInOut",
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-        >
-          <Image
-            src={`/${logo}`}
-            alt={logo.split(".")[0]}
-            width={60}
-            height={30}
-            className="h-6 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-          />
-        </motion.div>
-          ))}
+            { icon: FaSkating, name: "Skateboarding" },
+            { icon: FaCamera, name: "Photography" },
+            { icon: FaPaintBrush, name: "Design" },
+            { icon: FaLaptopCode, name: "Development" },
+            { icon: FaPalette, name: "Art" },
+            { icon: FaDesktop, name: "UI/UX" },
+            { icon: FaPhotoVideo, name: "Media" },
+            { icon: FaBrush, name: "Creative" },
+            { icon: FaCode, name: "Coding" },
+            { icon: FaTabletAlt, name: "Mobile" },
+            { icon: FaMobile, name: "Apps" },
+            { icon: FaVectorSquare, name: "Graphics" },
+          ].map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <motion.div
+                key={index}
+                className="mx-4 flex-shrink-0"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.1,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+              >
+                <IconComponent
+                  className="h-8 w-8 text-gray-400 hover:text-blue-600 transition-all duration-300 hover:scale-110"
+                  title={item.name}
+                />
+              </motion.div>
+            );
+          })}
         </div>
         <style jsx>{`
           .marquee {

@@ -1,11 +1,15 @@
+"use client"
 import { Card, CardContent } from "@/components/ui/card"
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react"
+import Image from "next/image"
 
 const hobbies = [
   {
     title: "Skateboarding",
     description:
       "The foundation of my creative philosophy - finding flow, pushing boundaries, and embracing the process of continuous improvement.",
-    image: "/skateboarding-action.png",
+    image: "/images/Gemini_Generated_Image_68r2nr68r2nr68r2.jpg",
   },
   {
     title: "Street Photography",

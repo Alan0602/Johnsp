@@ -1,9 +1,11 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { motion, useInView, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 const categories = ["All", "Branding", "Digital", "Print", "Campaign"]
 
@@ -105,10 +107,13 @@ export function Gallery() {
             >
               <CardContent className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
+                    width={400}
+                    height={256}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                 </div>
@@ -130,10 +135,13 @@ export function Gallery() {
             </DialogHeader>
             {selectedProject && (
               <div className="space-y-6">
-                <img
+                <Image
                   src={selectedProject.image || "/placeholder.svg"}
                   alt={selectedProject.title}
+                  width={800}
+                  height={384}
                   className="w-full h-96 object-cover rounded-lg"
+                  priority
                 />
                 <div className="space-y-4">
                   <div className="text-sm text-accent font-medium">{selectedProject.category}</div>

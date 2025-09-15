@@ -4,12 +4,14 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
-  { name: "Gallery", href: "#gallery" },
+  { name: "Work", href: "#work" },
+  { name: "Gallery", href: "/gallery" },
   { name: "Hobbies", href: "#hobbies" },
   { name: "Contact", href: "#contact" },
 ]
@@ -18,6 +20,7 @@ export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,9 +48,16 @@ export function Navigation() {
 
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false)
-    const element = document.getElementById(href.substring(1))
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+    
+    if (href.startsWith('/')) {
+      // Handle page navigation
+      router.push(href)
+    } else {
+      // Handle section navigation
+      const element = document.getElementById(href.substring(1))
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
     }
   }
 

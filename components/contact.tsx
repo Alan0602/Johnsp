@@ -1,12 +1,13 @@
 "use client"
 
 import type React from "react"
-
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { motion, useInView } from "framer-motion"
+import { Mail, Phone, MapPin, Send } from "lucide-react"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -32,9 +33,9 @@ export function Contact() {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-in">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-primary">Let's Roll</h2>
+          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-primary">Let&apos;s Roll</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Ready to create something amazing together? Drop me a line and let's discuss your next project.
+            Ready to create something amazing together? Drop me a line and let&apos;s discuss your next project.
           </p>
         </div>
 
@@ -87,7 +88,7 @@ export function Contact() {
           <div className="space-y-8 animate-slide-in">
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-heading font-semibold text-xl mb-4 text-foreground">Let's Connect</h3>
+                <h3 className="font-heading font-semibold text-xl mb-4 text-foreground">Let&apos;s Connect</h3>
                 <div className="space-y-4">
                   <div>
                     <p className="text-muted-foreground">Email</p>
