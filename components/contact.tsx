@@ -77,10 +77,10 @@ export function Contact() {
         {/* Header */}
         <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Let's Roll Together
+            Let&apos;s Roll Together
           </h2>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Ready to create something amazing? Whether it's a bold campaign, a fresh brand identity, or a digital experience that turns heads – let's drop in and make it happen.
+            Ready to create something amazing? Whether it&apos;s a bold campaign, a fresh brand identity, or a digital experience that turns heads – let&apos;s drop in and make it happen.
           </p>
         </motion.div>
 
@@ -93,7 +93,7 @@ export function Contact() {
                   Drop Me a Line
                 </CardTitle>
                 <p className="text-gray-600 dark:text-gray-300 mt-2">
-                  Tell me about your project and let's create something that makes an impact.
+                  Tell me about your project and let&apos;s create something that makes an impact.
                 </p>
               </CardHeader>
               <CardContent>
@@ -125,7 +125,7 @@ export function Contact() {
                   <div>
                     <Textarea
                       name="message"
-                      placeholder="Tell me about your project... What's your vision? What impact do you want to create?"
+                      placeholder="Tell me about your project... What&apos;s your vision? What impact do you want to create?"
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
@@ -152,7 +152,7 @@ export function Contact() {
             <Card className="border-0 shadow-xl bg-white/80 backdrop-blur-sm dark:bg-gray-800/80 overflow-hidden">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-white">
-                  Let's Connect
+                  Let&apos;s Connect
                 </h3>
                 <div className="space-y-4">
                   <motion.div 
@@ -234,7 +234,7 @@ export function Contact() {
             >
               <h4 className="text-lg font-bold mb-2">Ready to Skate the Edge?</h4>
               <p className="text-sm opacity-90">
-                Let's create something that makes an impact and turns heads.
+                Let&apos;s create something that makes an impact and turns heads.
               </p>
             </motion.div>
           </motion.div>
